@@ -1,10 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+/*Seccion de estilo general de los div del header y los iconos de fontawesome*/
+
 .contenedor_header{
     display: block;
     position: fixed;
     width: 100%;
     margin: auto;
-    top: 0;
-    left: 0;
     padding: 0;
     height: 50px;
     background-color: rgba(223, 13, 26, 0.8);
@@ -20,15 +24,6 @@
     float: left;
 }
 
-info{
-    display: block;
-    width: 33.33%;
-    margin: 0;
-    padding: 0;
-    border: none;
-    float: left;
-}
-
 i{
     font-size: 2em;
     color: snow;
@@ -36,30 +31,58 @@ i{
     border-radius: 20%;
 }
 
+/*Seccion de estilo para el menu*/
+
 ul.menu{
-    margin: 0;
+    margin: auto;
     padding: 0;
     list-style-type: none;
-    visibility: hidden;
+    visibility:hidden;
     box-shadow: 5x 5px darkslategray;
 }
 
 li a {
-    text-align: left;
+    text-align: center;
     display: block;
     z-index: 2;
-    width: 100px;
+    width: 100%;
     border-bottom: 2px solid blue;
     background-color: rgba(222, 184, 135, 0.7);
     color: darkslategray;
+    text-decoration: none;
 }
 
-.btn_menu:hover .menu{
+.active{
+    background-color: #1b4822;
+    color: floralwhite;
+    text-shadow: -1px 2px 3px gold;
+}
+
+.seleccionable:hover{
+    background-color:bisque;
+    color: black;
+    text-shadow: -1px 2px 3px red;
+}
+
+.btn_menu:hover ul.menu{
     visibility: visible;
 }
 
-div p i {
+/*Seccion de estilo para el logo*/
+
+img.logo{
+    width: auto;
+    height: auto;
+}
+
+/*Seccion de estilo para la informacion de la empresa*/
+
+div.columna_33 p,i {
+    margin: auto;
+    text-align: justify;
+    padding-left: 10px;
     font-size: 0.8em;
+    color: snow;
 }
 
 
