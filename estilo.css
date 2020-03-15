@@ -2,14 +2,21 @@
     box-sizing: border-box;
 }
 
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /*Estilo general de los div del header*/
 
 .contenedor_header{
     display: block;
-    position: fixed;
+    position: relative;
     width: 100%;
-    margin: auto;
+    margin: 0;
     padding: 0;
+    border: none;
     height: 50px;
     background-color: rgba(223, 13, 26, 0.8);
     align-content: center;
@@ -90,27 +97,28 @@ div.columna_33 p,i {
 
 /*Seccion de estilo para el banner*/
 
-main{
-    width: 100%;
-}
-
-
-div.banner figure img{
-    margin: 0;
-    padding: 0;
+.banner {
     display: block;
     position: relative;
-    z-index: -1;
     width: 100%;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0;
+}
+
+figure img{
+    display: block;
+    position: absolute;
+    margin: 0;
 }
 
 div.banner p{
     display:block;
-    position: relative;
+    position: absolute;
     vertical-align: middle;
     text-align: center;
     font-size: 1.8em;
-    z-index: 1;
     color: cornsilk;
     text-shadow: 2px 3px 4px red;
 }
@@ -118,7 +126,20 @@ div.banner p{
 
 /*Seccion de estilo para la galeria de enlaces*/
 
-div.slider{
+nav{
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+
+nav div img{
+    width: 80%;
+    border: 2px solid blue;
+    border-radius: 25%;
+}
+
+
+/*div.slider{
     display: inline-flex;
     align-content: center;
     flex-wrap: wrap;
@@ -131,12 +152,12 @@ div.header, div.slider{
     overflow: hidden;
     align-items: center;
     align-content: center;
-}
+}*/
 
 
 @media screen and (min-width: 650px) {
 
-    .contenedor_header {
+/*    .contenedor_header {
         height: auto;
     }
     
@@ -149,7 +170,7 @@ div.header, div.slider{
         text-align: left;
         background-image: url(img/...); /* Agregar una imagen de fondo como banner*/
     }
-    
+ /*   
     .columna_25{
         width: 25%;
     }
@@ -191,5 +212,5 @@ li a:hover {
     
     div.slider{
         width: 25%;
-    }
+    }*/
 }
