@@ -1,11 +1,13 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body, header, main, footer{
+    display: block;
+    position: relative;
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 /*Estilo general de los div del header*/
@@ -27,6 +29,7 @@ body, header, main, footer{
 
 .columna_33{
     width: 33.33%;
+    height: 50px;
     text-align: center;
     vertical-align: middle;
     float: left;
@@ -36,8 +39,10 @@ body, header, main, footer{
 
 
 i.icono_menu{
+    
     font-size: 1.8em;
-    padding-top: 10px;
+    text-align: center;
+    padding: 10px;
     color: snow;
 }
 
@@ -85,6 +90,7 @@ img.logo{
     height: 50px;
     opacity: 0.7;
     border-radius: 50%;
+    box-shadow: 2px 2px 4px gold;
 }
 
 /*Seccion de estilo para la informacion de la empresa*/
@@ -100,20 +106,25 @@ div.columna_33 p,i {
 /*Seccion de estilo para el banner*/
 
 div.contenedor_banner{
-        background-image: url(img/fondo04.jpg);
+    width: 100%;
+    height: 540px;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url(img/fondo04.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-
     z-index: -1;
 }
 
 div.banner {
     display: block;
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 480px;
+    height: 540px;
     align-content: center;
     align-items: center;
     vertical-align: middle;
@@ -125,50 +136,91 @@ div.banner {
 }
 
 div.banner p{
-    margin-left: 35%;
-    margin-top: 15%;
-    display:flex;
-    position: absolute;
+    margin-top: 40%;
     text-align: center;
-    font-size: 5em;
+    font-size: 3em;
     color: cornsilk;
     text-shadow: 2px 3px 4px red;
     z-index: 2;
 }
 
 
-}
-
-
 /*Seccion de estilo para la galeria de enlaces*/
 
-nav{
+.galeria{
+    top: 20px;
     display: block;
     position: absolute;
     width: 100%;
+    text-align: center;
 }
 
-nav div img{
-    width: 80%;
-    border: 2px solid blue;
-    border-radius: 25%;
-}
-
-
-/*div.slider{
-    display: inline-flex;
-    align-content: center;
-    flex-wrap: wrap;
+.header{
     width: 100%;
-    height: 400px;
+    height: 200px;
+    text-align: center;
 }
 
-div.header, div.slider{
-    height: 350px;
-    overflow: hidden;
-    align-items: center;
-    align-content: center;
+.header img{
+    width: 70%;
+    height: 90%;
+    border: 2px solid rgba(20, 112, 145, 0.7);
+    border-radius: 10px;
+    opacity: 1.0;
+}
+
+.slider{
+    width: 50%;
+    height: 300px;
+    float: left;
+    text-align: center;
+}
+
+.slider img{
+    width: 80%;
+    height: 80%;
+    border: 2px solid rgba(20, 112, 145, 0.7);
+    border-radius: 10px;
+    opacity: 1.0;
+}
+
+
+/*.galeria img:hover{
+    opacity: 0.6;
+    transform: scale(1.05);
+    box-shadow: -5px 5px 5px #2b333c;
 }*/
+
+a {
+    text-decoration: none;
+    visibility: hidden;
+    color: azure;
+    font-size: 1.2em;
+    background-color: rgba(47, 79, 79, 0.9);
+}
+
+.header a{
+    position: absolute;
+    padding: 10px;
+    vertical-align: middle;
+    width: 35%;
+    height: 5%;
+    top:5%;
+    left: 60%;
+}
+
+.slider a{
+    position: relative;
+    top:-75%;
+    left: 25%;
+    padding: 5%;
+}
+
+.slider:hover a, .header:hover a{
+    visibility: visible;
+    z-index: 3;
+}
+
 
 
 @media screen and (min-width: 650px) {
