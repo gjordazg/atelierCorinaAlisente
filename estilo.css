@@ -150,7 +150,7 @@ div.banner p{
 .galeria{
     top: 20px;
     display: block;
-    position: absolute;
+    position: relative;
     width: 100%;
     text-align: center;
 }
@@ -221,6 +221,13 @@ a {
     z-index: 3;
 }
 
+/*Seccion de estilo para el footer*/
+
+.footer{
+    background-color: rgba(223, 13, 26, 0.8);
+    height: 250px;
+    bottom: -50%;
+}
 
 
 @media screen and (min-width: 650px) {
