@@ -9,11 +9,15 @@
     <title>Index de Prueba</title>
     <link rel="stylesheet" href="estilo.css">
     <script src="https://kit.fontawesome.com/6210fb760a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lateef|Lato|Merienda&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>         <!-- En esta seccion se incluye elementos como el logo de la empresa, menu principal y datos de contacto de la empresa -->
-      <div class="contenedor_header">
-        <div class="columna_33 btn_menu"> <!-- Este div contiene el icono del menu y la barra de menu -->
+     <header class="contenedor_header">         
+      <div class="barra_menu"> <!-- En esta seccion se incluyen elementos como el logo de la empresa, menu principal y redes sociales de la empresa -->
+        <div class="columna_33 columna_75"><!-- Contenedor del logo -->
+           <img class="logo" src="img/logo.jpg" alt="logo" title="Corina Alisente Atellier">
+        </div> 
+        <div class="columna_33 btn_menu"> <!-- Contenedor del icono y barra del menu -->
            <i class="fas fa-bars icono_menu"></i>
            <ul class="menu">
             <li class="active">Inicio</li>
@@ -23,17 +27,14 @@
             <li class="seleccionable"><a href="" target="_blank">Acuarela</a></li>
            </ul>
         </div>
-        <div class="columna_33 columna_75"><img class="logo" src="img/logo.jpg" alt="logo" title="Corina Alisente Atellier"></div>
-        <div class="columna_33 columna_25">
-            <p><i class="fas fa-map-marker-alt"></i>  Direccion <br/>
-                <i class="fas fa-at"></i>  e-mail <br/>
-                <i class="fab fa-whatsapp"></i> +54 911 3893-0644</p>  
+        <div class="columna_33 columna_25"> <!-- Contenedor de iconos de las redes sociales -->
+            <a href="https://www.facebook.com/corinaalisente.com.ar/" target="_blank" class="icono"><i class="fab fa-facebook-square icono_redes"></i></a>
+            <a href="" target="_blank" class="icono"><i class="fab fa-twitter-square icono_redes"></i></a>
+            <a href="https://www.instagram.com/CoriAlisente/" target="_blank" class="icono"><i class="fab fa-instagram-square icono_redes"></i></a>
         </div>
       </div>
-      <div class="contenedor_banner">
-          <div class="banner">
+      <div class="banner">
            <p class="msj_inicio">Bienvenidos</p>
-          </div>
        </div>
    </header>
    <main>          <!-- En esta seccion se incluye una galeria de elementos que direcciona al usuario a las diferentes paginas del proyecto-->
