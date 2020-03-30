@@ -81,7 +81,7 @@ img.logo{
     z-index: 3;
 }
 
-li a{
+li a:link{
     display: block;
     color: seashell;
     font-size: 1.3em;
@@ -93,20 +93,24 @@ li a{
 }
 
 .active a{
-    background-color: rgba(0, 166, 253, 0.6);
+    color: seashell;
+    background-color: rgba(9, 27, 87, 0.75);
     text-shadow: -1px 2px 5px black;
 }
 
-.seleccionable:hover a{
-    background-color: rgba(227, 182, 185, 0.8);
+.active a:hover{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.seleccionable a:hover{
+    background-color: rgba(0, 166, 253, 0.6);
     color: snow;
-    text-shadow: -1px 2px 3px red;
+    text-shadow: -1px 2px 3px black;
 }
 
 .btn_menu:hover ul.menu li a{
     visibility: visible;
-    transition-delay: 0.7s;
-    transition-duration: 0.9s;
 }
 
 /* Seccion de estilo para los iconos de las redes sociales */
@@ -159,10 +163,9 @@ li a{
 main{
     height:  400px;
     background-color: rgba(0, 18, 32, 1);
-    color: bisque;
-    text-shadow: 2px 2px 5px snow;
     font-family: 'Lato', sans-serif;
     font-size: 2em;
+    text-decoration: none;
 }
 
 .galeria{
@@ -174,14 +177,30 @@ main{
     padding: 20px;
 }
 
-.enlace a{
+.enlace a:link{
     display: block;
     position: relative;
     padding: 0 10px;
     bottom: 47px;
-    text-decoration: none;
     background-color: rgba(196, 12, 19, 0.63);
     border-radius: 0 0 20px 20px;
+    color: blanchedalmond;
+    text-shadow: 1px 1px 5px snow;
+
+}
+
+.enlace a:hover{
+    color: skyblue;
+    text-shadow: 2px 2px 2px black;
+    text-decoration: none;
+}
+
+.enlace a:active{
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #ffbe6f;
+    text-shadow: 2px 2px 2px black, 1px 1px 5px snow;
+    text-decoration: none;
 }
 
 .navigator, .item{
@@ -200,11 +219,6 @@ main{
 .item:hover img{
     opacity: 1.0;
 }
-
-.enlace a:hover{
-    
-}
-
 
 /* ---------------------------------- */
 /* Estilo del footer y sus elementos */
