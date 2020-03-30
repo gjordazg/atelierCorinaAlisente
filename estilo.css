@@ -42,8 +42,7 @@ header{
     border: none;
     height: 50px;
     background-color: rgba(223, 13, 26, 0.8);
-    align-content: center;
-    align-items: center;
+    text-align: center;
     vertical-align: middle; 
     z-index: 1000;
 }
@@ -69,48 +68,46 @@ img.logo{
 /*Seccion de estilo para el menu*/
 
 
-i.icono_menu{
-    
+.icono_menu{
     font-size: 1.8em;
     text-align: center;
     padding: 10px;
     color: snow;
 }
 
-ul.menu{
-    margin: auto;
-    padding: 0;
-    list-style-type: none;
+.menu {
+    width: 250%;
+    transform: translateX(-90px);
     visibility:hidden;
     text-align:left;
     font-size: 1.3em;
+    z-index: 3;
 }
 
 
-li a {
+li a{
     display: block;
-    z-index: 2;
-    width: 100%;
-    background-color: rgba(200, 195, 229, 0.6);
-    color:black;
+    color: seashell;
+    font-size: 1.3em;
     text-decoration: none;
-    padding: 5px 20px;
+    list-style-type: none;
+    padding: 5px 50px;
+    background-color: rgba(49, 10, 10, 0.8);
+    text-shadow: -1px 2px 10px gold;
 }
 
-.active{
-    background-color: rgba(27, 58, 72, 0.8);
-    color: floralwhite;
-    text-shadow: -1px 2px 3px gold;
-    padding: 5px 20px;
+.active a{
+    background-color: rgba(0, 166, 253, 0.6);
+    text-shadow: -1px 2px 5px black;
 }
 
-.seleccionable:hover{
-    background-color:bisque;
-    color: black;
+.seleccionable:hover a{
+    background-color: rgba(227, 182, 185, 0.8);
+    color: snow;
     text-shadow: -1px 2px 3px red;
 }
 
-.btn_menu:hover ul.menu{
+.btn_menu:hover ul.menu li a{
     visibility: visible;
 }
 
@@ -163,7 +160,7 @@ li a {
 
 main{
     height:  400px;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 18, 32, 0.95);
 }
 
 
@@ -209,7 +206,7 @@ main{
     opacity: 0.6;
     transform: scale(1.05);
     box-shadow: -5px 5px 5px #2b333c;
-}*/
+
 
 a {
     text-decoration: none;
@@ -240,7 +237,7 @@ a {
     visibility: visible;
     z-index: 3;
 }
-
+}*/
 /* ---------------------------------- */
 /* Estilo del footer y sus elementos */
 /* ---------------------------------- */
@@ -252,6 +249,134 @@ footer{
 
 @media screen and (min-width: 650px) {
 
+/* ---------------------------------- */
+/* Estilo del header y sus elementos */
+/* ---------------------------------- */
+
+header{
+    height: 480 px;
+    background-image: url(img/fondo04.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Seccion de estilo para los div del header */
+
+.barra_menu{
+    height: 100px;
+}
+
+.columna_75{
+    width: 75%;
+    height: 100px;
+    text-align: left;
+    padding: 0 5px;
+    vertical-align: middle;
+    float: left;
+}
+
+/*Seccion de estilo para el logo*/
+
+img.logo{
+    width: auto;
+    height: 50px;
+    opacity: 0.85;
+    border-radius: 50%;
+    box-shadow: -2px 2px 5px grey, 0 0 10px gold;
+}
+
+/*Seccion de estilo para el menu*/
+
+
+.icono_menu{
+    font-size: 1.8em;
+    text-align: center;
+    padding: 10px;
+    color: snow;
+}
+
+.menu {
+    width: 275%;
+    list-style-type: none;
+    visibility:hidden;
+    text-align:left;
+    font-size: 1.3em;
+    transform: translateX(-105px);
+    transition: visibility 2s;
+    background-color: rgba(212, 106, 100, 0.78);
+    color: floralwhite;
+    text-shadow: -1px 2px 3px red;
+    z-index: 3;
+}
+
+
+li a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 50px;
+}
+
+.active a{
+     background-color: rgba(104, 100, 212, 0.78);
+}
+
+.seleccionable:hover a{
+    background-color: rgba(227, 182, 185, 0.8);
+    color: snow;
+    text-shadow: -1px 2px 3px red;
+}
+
+.btn_menu:hover ul.menu li a{
+    visibility: visible;
+}
+
+/* Seccion de estilo para los iconos de las redes sociales */
+
+.icono{
+    height: 50px;
+    width: 100%;
+}
+
+.icono_redes {
+    visibility: visible;
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 13px 5px;
+    font-size: 1.2em;
+    color: snow;
+}
+
+.icono:hover .icono_redes{
+    cursor: pointer;
+    text-shadow: -2px 2px 5px grey;
+    font-size: 1.5em;
+}
+
+/* Seccion de estilo para el banner */
+
+.banner{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;    
+    z-index: -1;
+}
+
+.banner p{
+    font-family: 'Merienda', cursive;
+    padding: 30% 0 70%;
+    text-align: center;
+    font-size: 3em;
+    color: cornsilk;
+    text-shadow: 2px 3px 4px red;
+    z-index: 2;
+}
+    
+    
+    
+    
 /*    .contenedor_header {
         height: auto;
     }
