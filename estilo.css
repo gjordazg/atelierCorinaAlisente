@@ -40,7 +40,7 @@ header{
     background-color: rgba(223, 13, 26, 0.8);
     text-align: center;
     vertical-align: middle; 
-    z-index: 1000;
+    z-index: 5;
 }
 
 .columna_33{
@@ -73,12 +73,13 @@ img.logo{
 
 .contenedor_menu{
     visibility:hidden;
-    z-index: -3;
+    z-index: 6;
+       width: 250%;
+    transform: translateX(-90px);
 }
 
 .menu {
-    width: 250%;
-    transform: translateX(-90px);
+ 
     text-align:left;
     font-size: 1.3em;
     z-index: 3;
@@ -252,6 +253,109 @@ footer{
 
 @media screen and (min-width: 650px) {
 
+/* ---------------------------------- */
+/* Estilo del header y sus elementos */
+/* ---------------------------------- */
+
+
+/* Barra de menu */
+    
+.barra_menu{
+    height: 75px;
+}
+
+/* Logo */
+    
+img.logo{
+    height: 75px;
+}
+
+/* Menu */
+    
+.icono_menu{
+    font-size: 3.0em;
+}
+
+  .contenedor_menu{
+    width: 280%;
+    transform: translateX(-33%);
+margin-top: -10px;
+}
+
+    .menu li{
+        display: inline;
+        position: relative;
+        width: 25%;
+        float: left;
+    }
+    
+li a:link{
+    font-size: 1.7em;
+    padding: 5px 0;
+    text-align: center;
+    height: 70px;
+}
+
+/* Iconos de redes sociales */
+
+.icono_redes {
+    padding: 15px 10px;
+    font-size: 2.5em;
+}
+
+.icono:hover .icono_redes{
+    font-size: 2.8em;
+}
+
+/* Banner */
+
+    header{
+        height: 600px;
+    }
+    
+.banner{
+    height: 600px;
+}
+
+.banner p{
+    padding: 30% 0 70%;
+    font-size: 3em;
+}
+
+/* ---------------------------------- */
+/* Estilo del main y sus elementos */
+/* ---------------------------------- */
+
+main{
+    height:  650px;
+    font-size: 3em;
+}
+
+.galeria{
+    padding: 5% 15%;
+}
+
+.enlace a:link{
+    bottom: 70px;
+}
+
+.enlace a:active{
+    font-size: 1.5em;
+    bottom: 90px;
+}
+  
+/* ---------------------------------- */
+/* Estilo del footer y sus elementos */
+/* ---------------------------------- */
+
+footer{
+    height: 210px;
+}
+    
+.footer p{
+    font-size: 1.8em;
+}
+    
 }
 
 /* --------------------- Estilo de la vista PC ---------------------------- */
