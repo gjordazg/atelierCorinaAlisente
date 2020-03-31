@@ -1,3 +1,6 @@
+/* ------------------- Estilo de la vista mobile -------------------------- */
+/* ------------------------------------------------------------------------ */
+
 /* Estilo general del documento */
 
 *{
@@ -242,190 +245,19 @@ footer{
     font-size: 1.2em;
 }
 
+
+/* ------------------- Estilo de la vista tablet -------------------------- */
+/* ------------------------------------------------------------------------ */
+
+
 @media screen and (min-width: 650px) {
 
-/* ---------------------------------- */
-/* Estilo del header y sus elementos */
-/* ---------------------------------- */
-
-header{
-    height: 480 px;
-    background-image: url(img/fondo04.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
-/* Seccion de estilo para los div del header */
-
-.barra_menu{
-    height: 100px;
-}
-
-.columna_75{
-    width: 75%;
-    height: 100px;
-    text-align: left;
-    padding: 0 5px;
-    vertical-align: middle;
-    float: left;
-}
-
-/*Seccion de estilo para el logo*/
-
-img.logo{
-    width: auto;
-    height: 50px;
-    opacity: 0.85;
-    border-radius: 50%;
-    box-shadow: -2px 2px 5px grey, 0 0 10px gold;
-}
-
-/*Seccion de estilo para el menu*/
-
-
-.icono_menu{
-    font-size: 1.8em;
-    text-align: center;
-    padding: 10px;
-    color: snow;
-}
-
-.menu {
-    width: 275%;
-    list-style-type: none;
-    visibility:hidden;
-    text-align:left;
-    font-size: 1.3em;
-    transform: translateX(-105px);
-    transition: visibility 2s;
-    background-color: rgba(212, 106, 100, 0.78);
-    color: floralwhite;
-    text-shadow: -1px 2px 3px red;
-    z-index: 3;
-}
-
-
-li a{
-    display: block;
-    text-decoration: none;
-    padding: 5px 50px;
-}
-
-.active a{
-     background-color: rgba(104, 100, 212, 0.78);
-}
-
-.seleccionable:hover a{
-    background-color: rgba(227, 182, 185, 0.8);
-    color: snow;
-    text-shadow: -1px 2px 3px red;
-}
-
-.btn_menu:hover ul.menu li a{
-    visibility: visible;
-}
-
-/* Seccion de estilo para los iconos de las redes sociales */
-
-.icono{
-    height: 50px;
-    width: 100%;
-}
-
-.icono_redes {
-    visibility: visible;
-    display: block;
-    float: left;
-    text-align: center;
-    padding: 13px 5px;
-    font-size: 1.2em;
-    color: snow;
-}
-
-.icono:hover .icono_redes{
-    cursor: pointer;
-    text-shadow: -2px 2px 5px grey;
-    font-size: 1.5em;
-}
-
-/* Seccion de estilo para el banner */
-
-.banner{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.6;    
-    z-index: -1;
-}
-
-.banner p{
-    font-family: 'Merienda', cursive;
-    padding: 30% 0 70%;
-    text-align: center;
-    font-size: 3em;
-    color: cornsilk;
-    text-shadow: 2px 3px 4px red;
-    z-index: 2;
-}
-    
-    
-    
-    
-/*    .contenedor_header {
-        height: auto;
-    }
-    
-    .btn_menu{
-        visibility: hidden;
-    }
-    
-    .columna_75{
-        width: 75%;
-        text-align: left;
-        background-image: url(img/...); /* Agregar una imagen de fondo como banner*/
-    }
- /*   
-    .columna_25{
-        width: 25%;
-    }
-}
-
+/* --------------------- Estilo de la vista PC ---------------------------- */
+/* ------------------------------------------------------------------------ */
 
 
 @media screen and (min-width: 1250px) {
-    ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111111;
-}
-    
-    img{
-        width: 250px;
-        height: 500px;
-        border: solid 2px blue;
-        border-radius: 25px;
-    }
-    
-    div.slider{
-        width: 25%;
-    }*/
 }
