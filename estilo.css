@@ -165,20 +165,25 @@ li a:link {
 /* ---------------------------------- */
 
 main {
-    height: 400px;
-    background-color: rgba(0, 18, 32, 1);
+    height: 440px;
+    background-color: rgb(0, 18, 32);
     font-family: 'Lato', sans-serif;
     font-size: 2em;
     text-decoration: none;
 }
 
-.galeria {
+.galeria1{
+    visibility: hidden;
+    height: 0;
+}
+
+.galeria2 {
     display: block;
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 15% 10%;
 }
 
 .enlace a:link {
@@ -230,12 +235,12 @@ main {
 /* ---------------------------------- */
 
 footer {
-    height: 180px;
+    height: 210px;
     background-color: rgba(223, 13, 26, 0.8);
 }
 
 .footer {
-    padding: 20px;
+    padding: 20px 10px;
 }
 
 .footer p {
@@ -245,7 +250,7 @@ footer {
     display: block;
     position: relative;
     color: snow;
-    font-size: 1.2em;
+    font-size: 1.15em;
 }
 
 
@@ -333,7 +338,7 @@ footer {
         font-size: 3em;
     }
 
-    .galeria {
+    .galeria2 {
         padding: 5% 15%;
     }
 
@@ -439,5 +444,137 @@ footer {
         font-size: 5em;
     }
   
+    /* ---------------------------------- */
+    /* Estilo del main y sus elementos */
+    /* ---------------------------------- */
+
+    main{
+        height: 1300px;
+    }
     
+    .galeria2 {
+        visibility: hidden;
+        position: absolute;
+        height: 0;
+    }
+    
+    .galeria1{
+        position: relative;
+        visibility: visible;
+        height: 100%;
+    }
+    
+    .img_header{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 30%;
+        padding: 40px 0 0 80px;
+}
+    
+    #img1{
+        top: 50px;
+        left: 20px;
+        width: 60%;
+        height: 80%;
+        background-image: url(img/pintura_porcelana.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        box-shadow: 4px 4px 4px 4px grey;
+    }
+    
+    #img1 a{
+        position: relative;
+        left: 85%;
+        top: 85%;
+        text-align: center;
+        color: black;
+        padding: 0 20px;
+        background-color: white;
+        box-shadow: 1px 5px 10px 5px grey;
+        
+    }
+    
+    .barra{
+        margin-top: 10%;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 60%;
+}
+    
+    .barra .up, .barra .down{
+        position: relative;
+        width: 20%;
+        margin: 0 2.5%;
+        height: 80%;
+        float: left;
+        box-shadow: 4px 4px 4px 4px grey;
+    }
+    
+    .barra a{ 
+        position:absolute;
+        color: black;
+        background-color: white;
+        text-align: center;
+        padding: 0 20px;
+        box-shadow: 1px 5px 10px 5px grey;
+    }
+    
+    
+    #img2{
+        background-image: url(img/pintura_bastidor.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        top: -90px;
+    }
+    
+    #img2 a{
+        width: 350px;
+        top: 1%;
+        left: 70%;
+    }
+    
+    #img3{
+        background-image: url(img/acuarela.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        top: 70px;
+    }
+    
+    #img3 a{
+        width: 200px;
+        bottom: -5%;
+        left: 60%;
+    }
+    
+    #img4{
+        background-image: url(img/mix_media.jpg);
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size:cover;
+        top: -100px;
+    }
+    
+    #img4 a{
+        width: 200px;
+        bottom: 40%;
+        left: 10%;
+    }
+
+    #img5{
+        background-image: url(img/repujado_estanyo.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+    
+    #img5 a{
+        width: 330px;
+        bottom: -5%;
+        left: -60%;
+    }
 }

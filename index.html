@@ -50,8 +50,32 @@
 
     <!-- En esta seccion se incluye una galeria de elementos que direcciona al usuario a diferentes paginas del proyecto-->
     <main>
-        <!-- Galeria de imagenes dentro de codigo de bootstrap -->
-        <div id="carouselExampleCaptions" class="carousel slide galeria" data-ride="carousel">
+
+        <!-- Esta galeria es solo para la vista para PC -->
+        <div class="galeria1">
+            <div class="img_header">
+                <div id="img1">
+                    <a href="porcelana.html" target="_blank">Pintura en porcelana</a>
+                </div>
+            </div>
+            <div class="barra">
+                <div id="img2" class="up">
+                    <a href="bastidor.html" target="_blank">Pintura en bastidor</a>
+                </div>
+                <div id="img3" class="down">
+                    <a href="acuarela.html" target="_blank">Acuarela</a>
+                </div>
+                <div id="img4" class="up">
+                    <a href="mixmedia.html" target="_blank">Mix media</a>
+                </div>
+                <div id="img5" class="down">
+                    <a href="repujado.html" target="_blank">Repujado de estaño</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Galeria de imagenes dentro de codigo de bootstrap solo visible para mobile y tablets -->
+        <div id="carouselExampleCaptions" class="carousel slide galeria2" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -61,31 +85,31 @@
             </ol>
             <div class="carousel-inner navigator">
                 <div class="carousel-item active item">
-                    <img src="img/mix_media.jpg" alt="Mix media" title="Mix Media" class="d-block w-100">
+                    <img src="img/mix_media.jpg" alt="Mix media" title="Mix Media" class="d-block w-100" id="img1">
                     <div class="enlace">
                         <a href="mixmedia.html" target="_blank">Mix media</a>
                     </div>
                 </div>
                 <div class="carousel-item item">
-                    <img src="img/pintura_bastidor.jpg" alt="Pintura en bastidor" title="Pintura en bastidor" class="d-block w-100">
+                    <img src="img/pintura_bastidor.jpg" alt="Pintura en bastidor" title="Pintura en bastidor" class="d-block w-100" id="img2">
                     <div class="enlace">
                         <a href="bastidor.html" target="_blank">Pintura en bastidor</a>
                     </div>
                 </div>
                 <div class="carousel-item item">
-                    <img src="img/acuarela.jpg" alt="Acuarela" title="Acuarela" class="d-block w-100">
+                    <img src="img/acuarela.jpg" alt="Acuarela" title="Acuarela" class="d-block w-100" id="img3">
                     <div class="enlace">
                         <a href="acuarela.html" target="_blank">Acuarela</a>
                     </div>
                 </div>
                 <div class="carousel-item item">
-                    <img src="img/pintura_porcelana.jpg" alt="Pintura en porcelana" title="Pintura en porcelana" class="d-block w-100">
+                    <img src="img/pintura_porcelana.jpg" alt="Pintura en porcelana" title="Pintura en porcelana" class="d-block w-100" id="img4">
                     <div class="enlace">
                         <a href="porcelana.html" target="_blank">Pintura en porcelana</a>
                     </div>
                 </div>
                 <div class="carousel-item item">
-                    <img src="img/repujado_estanyo.jpg" alt="Repujado de estaño" title="Repujado de estaño" class="d-block w-100">
+                    <img src="img/repujado_estanyo.jpg" alt="Repujado de estaño" title="Repujado de estaño" class="d-block w-100" id="img5">
                     <div class="enlace">
                         <a href="repujado.html" target="_blank">Repujado de estaño</a>
                     </div>
@@ -100,8 +124,9 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+
     </main>
-    
+
     <footer>
         <!-- En esta seccion se incluye elementos de contacto de la empresa y demas informacion legal-->
         <div class="footer">
@@ -112,12 +137,10 @@
             <p style="text-align: center"><i class="fas fa-copyright"></i> Todos los derechos reservados </p>
         </div>
     </footer>
-    
+
     <!-- En esta seccion se incluyen los script de funcionamiento de bootstrap y propios -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-</body>
-
-</html>
+</body></html>
