@@ -3,14 +3,14 @@
 
 /* Estilo general del documento */
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Lateef', cursive;
 }
 
-body, header, main, footer{
+body, header, main, footer {
     display: block;
     position: relative;
     width: 100%;
@@ -21,7 +21,7 @@ body, header, main, footer{
 /* Estilo del header y sus elementos */
 /* ---------------------------------- */
 
-header{
+header {
     height: 480px;
     background-image: url(img/fondo04.jpg);
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@ header{
 
 /* Seccion de estilo para los div del header */
 
-.barra_menu{
+.barra_menu {
     display: block;
     position: relative;
     width: 100%;
@@ -39,11 +39,11 @@ header{
     height: 50px;
     background-color: rgba(223, 13, 26, 0.8);
     text-align: center;
-    vertical-align: middle; 
+    vertical-align: middle;
     z-index: 5;
 }
 
-.columna_33{
+.columna_33 {
     width: 33.33%;
     height: 50px;
     text-align: center;
@@ -53,7 +53,7 @@ header{
 
 /*Seccion de estilo para el logo*/
 
-img.logo{
+img.logo {
     width: auto;
     height: 50px;
     opacity: 0.85;
@@ -64,28 +64,28 @@ img.logo{
 /*Seccion de estilo para el menu*/
 
 
-.icono_menu{
+.icono_menu {
     font-size: 1.8em;
     text-align: center;
     padding: 10px;
     color: snow;
 }
 
-.contenedor_menu{
-    visibility:hidden;
+.contenedor_menu {
+    visibility: hidden;
     z-index: 6;
-       width: 250%;
+    width: 250%;
     transform: translateX(-90px);
 }
 
 .menu {
- 
-    text-align:left;
+
+    text-align: left;
     font-size: 1.3em;
     z-index: 3;
 }
 
-li a:link{
+li a:link {
     display: block;
     color: seashell;
     font-size: 1.3em;
@@ -96,30 +96,30 @@ li a:link{
     text-shadow: -1px 2px 10px gold;
 }
 
-.active a{
+.active a {
     color: seashell;
     background-color: rgba(9, 27, 87, 0.75);
     text-shadow: -1px 2px 5px black;
 }
 
-.active a:hover{
+.active a:hover {
     color: aliceblue;
     text-decoration: none;
 }
 
-.seleccionable a:hover{
+.seleccionable a:hover {
     background-color: rgba(0, 166, 253, 0.6);
     color: snow;
     text-shadow: -1px 2px 3px black;
 }
 
-.btn_menu:hover ul.menu li a{
+.btn_menu:hover ul.menu li a {
     visibility: visible;
 }
 
 /* Seccion de estilo para los iconos de las redes sociales */
 
-.icono{
+.icono {
     height: 50px;
     width: 100%;
 }
@@ -134,7 +134,7 @@ li a:link{
     color: snow;
 }
 
-.icono:hover .icono_redes{
+.icono:hover .icono_redes {
     cursor: pointer;
     text-shadow: -2px 2px 5px grey;
     font-size: 1.5em;
@@ -142,14 +142,14 @@ li a:link{
 
 /* Seccion de estilo para el banner */
 
-.banner{
+.banner {
     width: 100%;
     height: 430px;
-    background-color: rgba(0, 0, 0, 0.4);   
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: -1;
 }
 
-.banner p{
+.banner p {
     font-family: 'Merienda', cursive;
     padding: 30% 0 70%;
     text-align: center;
@@ -164,15 +164,15 @@ li a:link{
 /* Estilo del main y sus elementos */
 /* ---------------------------------- */
 
-main{
-    height:  400px;
+main {
+    height: 400px;
     background-color: rgba(0, 18, 32, 1);
     font-family: 'Lato', sans-serif;
     font-size: 2em;
     text-decoration: none;
 }
 
-.galeria{
+.galeria {
     display: block;
     position: relative;
     width: 100%;
@@ -181,7 +181,7 @@ main{
     padding: 20px;
 }
 
-.enlace a:link{
+.enlace a:link {
     display: block;
     position: relative;
     padding: 0 10px;
@@ -193,13 +193,13 @@ main{
 
 }
 
-.enlace a:hover{
+.enlace a:hover {
     color: skyblue;
     text-shadow: 2px 2px 2px black;
     text-decoration: none;
 }
 
-.enlace a:active{
+.enlace a:active {
     font-size: 1.1em;
     font-weight: 400;
     color: #ffbe6f;
@@ -207,12 +207,13 @@ main{
     text-decoration: none;
 }
 
-.navigator, .item{
+.navigator,
+.item {
     height: 100%;
     width: 100%;
 }
 
-.item img{
+.item img {
     width: 100%;
     height: 90%;
     border-radius: 20px;
@@ -220,7 +221,7 @@ main{
     box-shadow: 0 2px 10px snow;
 }
 
-.item:hover img{
+.item:hover img {
     opacity: 1.0;
 }
 
@@ -228,15 +229,16 @@ main{
 /* Estilo del footer y sus elementos */
 /* ---------------------------------- */
 
-footer{
+footer {
     height: 180px;
     background-color: rgba(223, 13, 26, 0.8);
 }
-.footer{
-    padding: 20px;     
+
+.footer {
+    padding: 20px;
 }
 
-.footer p{
+.footer p {
     padding: 0 20px;
     width: 100%;
     height: 20px;
@@ -253,109 +255,109 @@ footer{
 
 @media screen and (min-width: 650px) {
 
-/* ---------------------------------- */
-/* Estilo del header y sus elementos */
-/* ---------------------------------- */
+    /* ---------------------------------- */
+    /* Estilo del header y sus elementos */
+    /* ---------------------------------- */
 
 
-/* Barra de menu */
-    
-.barra_menu{
-    height: 75px;
-}
+    /* Barra de menu */
 
-/* Logo */
-    
-img.logo{
-    height: 75px;
-}
+    .barra_menu {
+        height: 75px;
+    }
 
-/* Menu */
-    
-.icono_menu{
-    font-size: 3.0em;
-}
+    /* Logo */
 
-  .contenedor_menu{
-    width: 280%;
-    transform: translateX(-33%);
-margin-top: -10px;
-}
+    img.logo {
+        height: 75px;
+    }
 
-    .menu li{
+    /* Menu */
+
+    .icono_menu {
+        font-size: 3.0em;
+    }
+
+    .contenedor_menu {
+        width: 280%;
+        transform: translateX(-33%);
+        margin-top: -10px;
+    }
+
+    .menu li {
         display: inline;
         position: relative;
         width: 25%;
         float: left;
     }
-    
-li a:link{
-    font-size: 1.7em;
-    padding: 5px 0;
-    text-align: center;
-    height: 70px;
-}
 
-/* Iconos de redes sociales */
+    li a:link {
+        font-size: 1.7em;
+        padding: 5px 0;
+        text-align: center;
+        height: 70px;
+    }
 
-.icono_redes {
-    padding: 15px 10px;
-    font-size: 2.5em;
-}
+    /* Iconos de redes sociales */
 
-.icono:hover .icono_redes{
-    font-size: 2.8em;
-}
+    .icono_redes {
+        padding: 15px 10px;
+        font-size: 2.5em;
+    }
 
-/* Banner */
+    .icono:hover .icono_redes {
+        font-size: 2.8em;
+    }
 
-    header{
+    /* Banner */
+
+    header {
         height: 600px;
     }
-    
-.banner{
-    height: 600px;
-}
 
-.banner p{
-    padding: 30% 0 70%;
-    font-size: 3em;
-}
+    .banner {
+        height: 525px;
+    }
 
-/* ---------------------------------- */
-/* Estilo del main y sus elementos */
-/* ---------------------------------- */
+    .banner p {
+        padding: 20% 0 80%;
+        font-size: 4.5em;
+    }
 
-main{
-    height:  650px;
-    font-size: 3em;
-}
+    /* ---------------------------------- */
+    /* Estilo del main y sus elementos */
+    /* ---------------------------------- */
 
-.galeria{
-    padding: 5% 15%;
-}
+    main {
+        height: 650px;
+        font-size: 3em;
+    }
 
-.enlace a:link{
-    bottom: 70px;
-}
+    .galeria {
+        padding: 5% 15%;
+    }
 
-.enlace a:active{
-    font-size: 1.5em;
-    bottom: 90px;
-}
-  
-/* ---------------------------------- */
-/* Estilo del footer y sus elementos */
-/* ---------------------------------- */
+    .enlace a:link {
+        bottom: 70px;
+    }
 
-footer{
-    height: 210px;
-}
-    
-.footer p{
-    font-size: 1.8em;
-}
-    
+    .enlace a:active {
+        font-size: 1.5em;
+        bottom: 90px;
+    }
+
+    /* ---------------------------------- */
+    /* Estilo del footer y sus elementos */
+    /* ---------------------------------- */
+
+    footer {
+        height: 210px;
+    }
+
+    .footer p {
+        font-size: 1.8em;
+    }
+
 }
 
 /* --------------------- Estilo de la vista PC ---------------------------- */
@@ -363,5 +365,79 @@ footer{
 
 
 @media screen and (min-width: 1250px) {
+    
+    /* ---------------------------------- */
+    /* Estilo del header y sus elementos */
+    /* ---------------------------------- */
 
+
+    /* Barra de menu */
+
+    .barra_menu {
+        height: 150px;
+    }
+
+    /* Logo */
+
+    img.logo {
+        height: 125px;
+        transform: translate(-25px, 12px);
+    }
+
+    /* Menu */
+
+    .icono_menu {
+        visibility: hidden;
+    }
+
+    .contenedor_menu {
+        visibility: visible;
+        width: 200%;
+        transform: translateX(-5%);
+    }
+
+    li a:link {
+        font-size: 1.7em;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    li.seleccionable{
+        border-left: 1px solid snow;    
+    }
+    
+    li.seleccionable a:hover {
+        border-radius: 0 25px 0;
+    }
+    
+    li.active a:link{
+        color: gainsboro;
+       border-radius: 0 25px 0;
+        background-color: rgba(0, 0, 0, 0.50);
+    }
+    
+    li.active a:hover{
+        cursor: default;
+    }
+    
+    /* Iconos de redes sociales */
+
+    .icono_redes {
+        padding: 15px 30px;
+    }
+
+    /* Banner */
+
+    header {
+        height: 750px;
+    }
+
+    .banner {
+        height: 600px;
+    }
+
+    .banner p {
+        font-size: 5em;
+    }
+  
+    
 }
