@@ -450,6 +450,7 @@ footer {
 
     main{
         height: 1300px;
+        font-size: 2.5em;
     }
     
     .galeria2 {
@@ -481,7 +482,15 @@ footer {
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
-        box-shadow: 4px 4px 4px 4px grey;
+        opacity: 0.7;
+        transition: opacity 1s, transform 1s;
+        box-shadow: 4px 4px 4px 4px grey;       
+    }
+    
+    #img1:hover{
+        cursor: default;
+        opacity: 1;
+        transform: scale(1.05);
     }
     
     #img1 a{
@@ -493,7 +502,24 @@ footer {
         padding: 0 20px;
         background-color: white;
         box-shadow: 1px 5px 10px 5px grey;
-        
+        transition: opacity 0.5s;
+        opacity: 0;
+        border-radius: 15px;
+    }
+    
+    #img1 a::after, #img3 a::after{
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 25%;
+        margin-left: -5px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent white transparent;
+    }
+    
+    #img1:hover a{
+        opacity: 1;
     }
     
     .barra{
@@ -511,17 +537,31 @@ footer {
         height: 80%;
         float: left;
         box-shadow: 4px 4px 4px 4px grey;
+        opacity: 0.7;
+        transition: opacity 1s, transform 1s;
     }
     
-    .barra a{ 
+    .up:hover, .down:hover{
+        cursor: default;
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    
+    .barra .up a, .barra .down a{ 
         position:absolute;
         color: black;
         background-color: white;
         text-align: center;
         padding: 0 20px;
         box-shadow: 1px 5px 10px 5px grey;
+        transition: opacity 0.5s;
+        opacity: 0;
+        border-radius: 25px;
     }
-    
+   
+    .barra .up:hover a, .barra .down:hover a{
+        opacity: 1;
+    }
     
     #img2{
         background-image: url(img/pintura_bastidor.jpg);
@@ -534,7 +574,18 @@ footer {
     #img2 a{
         width: 350px;
         top: 1%;
-        left: 70%;
+        left: 70%;    
+    }
+    
+    #img2 a::after{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 10%;
+        margin-left: -5px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: white transparent transparent transparent;
     }
     
     #img3{
@@ -551,6 +602,7 @@ footer {
         left: 60%;
     }
     
+    
     #img4{
         background-image: url(img/mix_media.jpg);
         background-repeat:no-repeat;
@@ -564,7 +616,16 @@ footer {
         bottom: 40%;
         left: 10%;
     }
-
+#img4 a::after, #img5 a::after{
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 60%;
+        margin-left: -5px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent white transparent;
+    }
     #img5{
         background-image: url(img/repujado_estanyo.jpg);
         background-repeat: no-repeat;
@@ -577,4 +638,20 @@ footer {
         bottom: -5%;
         left: -60%;
     }
+    
+    #img1 a:hover, #img2 a:hover, #img3 a:hover, #img4 a:hover, #img5 a:hover{
+        cursor: pointer;
+        background-color: rgba(196, 12, 19, 0.8);
+        color: blanchedalmond;
+        text-shadow: 1px 1px 5px snow;
+        text-decoration: none;
+    }
+    
+    #img1 a:active, #img2 a:active, #img3 a:active, #img4 a:active, #img5 a:active{
+        cursor: pointer;
+        background-color: rgba(0, 12, 19, 0.8);
+        color: white;
+        font-size: 1.1em;
+    }
+    
 }
