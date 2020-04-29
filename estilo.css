@@ -7,13 +7,16 @@
     font-family: 'Lateef', cursive;
 }
 
-body, header, main, footer {
+body,
+header,
+main,
+footer {
     display: block;
     position: relative;
     width: 100%;
 }
 
-body{
+body {
     height: 100vh;
 }
 
@@ -49,7 +52,8 @@ header {
     z-index: 5;
 }
 
-.columna_33 {
+.col-33-40,
+.col-33-60 {
     width: 33.33%;
     height: 100%;
     float: left;
@@ -68,14 +72,21 @@ img.logo {
 
 /*Seccion de estilo para el menu*/
 
+#btn_menu {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+}
 
 .icono_menu {
-    font-size: 2.0em;
-    padding: 15px;
+    font-size: 2.2em;
+    width: auto;
+    height: auto;
+    margin: auto;
     color: snow;
 }
 
-.icono_menu:active{
+.icono_menu:active {
     transform: scale(0.9);
 }
 
@@ -86,37 +97,39 @@ img.logo {
     left: 10%;
     margin: auto;
     transform: translateY(-150%);
-}   
+}
 
 .hide {
     animation-name: desaparece;
     animation-duration: 2s;
 }
 
-@keyframes desaparece{
-    from{
+@keyframes desaparece {
+    from {
         opacity: 1;
         transform: translateY(0);
     }
-    to{
+
+    to {
         opacity: 0;
         transform: translateY(-120%);
     }
 }
 
-.mostrar{
+.mostrar {
     transform: translateY(0);
     display: block;
     animation-name: aparece;
     animation-duration: 2s;
 }
 
-@keyframes aparece{
-    from{
+@keyframes aparece {
+    from {
         opacity: 0;
         top: -100px;
     }
-    to{
+
+    to {
         opacity: 1.0;
         top: 100%;
     }
@@ -159,44 +172,58 @@ li a:link {
 
 /* Seccion de estilo para los iconos de las redes sociales */
 
+.contendor-iconos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .icono {
-    height: 50px;
-    width: 100%;
+    display: block;
+    position: relative;
+    height: auto;
+    width: 25%;
+    margin: auto;
+}
+
+.icono:active {
+    transform: scale(0.9);
 }
 
 .icono_redes {
-    visibility: visible;
-    display: block;
-    float: left;
-    text-align: center;
-    padding: 13px 5px;
-    font-size: 1.2em;
+    font-size: 1.75em;
+    margin: auto;
     color: snow;
 }
 
 .icono:hover .icono_redes {
     cursor: pointer;
     text-shadow: -2px 2px 5px grey;
-    font-size: 1.5em;
+    transform: scale(1.1);
 }
 
 /* Seccion de estilo para el banner */
 
 .banner {
     width: 100%;
-    height: 430px;
-    background-color: rgba(0, 0, 0, 0.4);
+    height: 87.5%;
+    background-color: rgba(80, 113, 198, 0.4);
     z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .banner p {
+    display: block;
+    position: relative;
+    margin: auto;
+    height: 20%;
+    width: auto;
     font-family: 'Merienda', cursive;
-    padding: 30% 0 70%;
-    text-align: center;
     font-size: 3em;
     color: cornsilk;
     text-shadow: 2px 3px 4px red;
-    z-index: 2;
 }
 
 
@@ -205,14 +232,16 @@ li a:link {
 /* ---------------------------------- */
 
 main {
-    height: 440px;
-    background-color: rgb(0, 18, 32);
+    display: block;
+    position: relative;
+    height: 480px;
     font-family: 'Lato', sans-serif;
     font-size: 2em;
     text-decoration: none;
+    background-color: rgba(0, 11, 57, 0.9);
 }
 
-.galeria1{
+.galeria1 {
     display: none;
 }
 
@@ -222,7 +251,26 @@ main {
     width: 100%;
     height: 100%;
     text-align: center;
-    padding: 15% 10%;
+}
+
+
+.navigator,
+.item {
+    margin: auto;
+    padding: 7.5%;
+    height: 100%;
+    width: 100%;
+}
+
+.item img {
+    height: 90%;
+    border-radius: 20px;
+    opacity: 1.0;
+    box-shadow: -2px 2px 5px black, 0 0 10px 5px snow;
+}
+
+.item:hover img {
+    opacity: 0.8;
 }
 
 .enlace a:link {
@@ -251,23 +299,7 @@ main {
     text-decoration: none;
 }
 
-.navigator,
-.item {
-    height: 100%;
-    width: 100%;
-}
 
-.item img {
-    width: 100%;
-    height: 90%;
-    border-radius: 20px;
-    opacity: 0.7;
-    box-shadow: 0 2px 10px snow;
-}
-
-.item:hover img {
-    opacity: 1.0;
-}
 
 /* ---------------------------------- */
 /* Estilo del footer y sus elementos */
@@ -313,8 +345,8 @@ footer {
     .contenedor_menu {
         transform: translateY(-225%);
     }
-    
-    .mostrar{
+
+    .mostrar {
         transform: translateY(0);
     }
 
@@ -354,7 +386,6 @@ footer {
     }
 
     .banner p {
-        padding: 20% 0 80%;
         font-size: 4.5em;
     }
 
@@ -369,6 +400,10 @@ footer {
 
     .galeria2 {
         padding: 5% 15%;
+    }
+
+    .item img {
+        height: 100%;
     }
 
     .enlace a:link {
@@ -398,129 +433,143 @@ footer {
 /* ------------------------------------------------------------------------ */
 
 
-@media screen and (min-width: 1250px) {
-    
+@media screen and (min-width: 1024px) {
+
     /* ---------------------------------- */
     /* Estilo del header y sus elementos */
     /* ---------------------------------- */
 
+    header {
+        height: 820px;
+    }
 
     /* Barra de menu */
 
     .barra_menu {
-        height: 150px;
+        height: 15%;
     }
 
     /* Logo */
 
+    .col-33-40{
+         display: flex;
+        justify-content: space-around;
+    }
+    
     img.logo {
-        height: 125px;
-        transform: translate(-25px, 12px);
+        margin: auto;
+        height: 80%;
     }
 
     /* Menu */
 
-    .icono_menu {
-        visibility: hidden;
+    #btn_menu {
+        display: none;
     }
 
     .contenedor_menu {
-        visibility: visible;
-        width: 200%;
-        transform: translateX(-5%);
+        display: block;
+        width: 60%;
+        transform: translate(0);
+        right: -20%;
+        bottom: 0;
+        z-index: 6;
     }
 
     li a:link {
-        font-size: 1.7em;
+        width: 100%;
+        height: 100%;
+        font-size: 1.5em;
         background-color: rgba(0, 0, 0, 0);
     }
 
-    li.seleccionable{
-        border-left: 1px solid snow;    
+    li.seleccionable {
+        border-left: 1px solid snow;
     }
-    
+
     li.seleccionable a:hover {
         border-radius: 0 25px 0;
     }
-    
-    li.active a:link{
-        color: gainsboro;
-       border-radius: 0 25px 0;
+
+    li.seleccionable a:active {
+        transform: scale(0.9);
+    }
+
+    li.active a:link {
+        border-radius: 0 25px 0;
         background-color: rgba(0, 0, 0, 0.50);
     }
-    
-    li.active a:hover{
+
+    li.active a:hover {
         cursor: default;
     }
-    
+
+
     /* Iconos de redes sociales */
 
-    .icono_redes {
-        padding: 15px 30px;
+    .contendor-iconos {
+        transform: translateY(-20%)
     }
 
     /* Banner */
 
-    header {
-        height: 750px;
-    }
-
     .banner {
-        height: 600px;
+        height: 85%;
     }
 
     .banner p {
         font-size: 5em;
     }
-  
+
     /* ---------------------------------- */
     /* Estilo del main y sus elementos */
     /* ---------------------------------- */
 
-    main{
-        height: 1300px;
+    main {
+        height: 1250px;
         font-size: 2.5em;
     }
-    
+
     .galeria2 {
         display: none;
     }
-    
-    .galeria1{
+
+    .galeria1 {
         display: block;
         position: relative;
         height: 100%;
+        width: 100%;
     }
-    
-    .img_header{
+
+    .img_header {
         display: block;
         position: relative;
         width: 100%;
         height: 30%;
-        padding: 40px 0 0 80px;
-}
-    
-    #img1{
-        top: 50px;
-        left: 20px;
-        width: 60%;
-        height: 80%;
+    }
+
+    #img1 {
+        position: relative;
+        left: 15%; 
+        top: 10%;
+        width: 650px;
+        height: 230px;
         background-image: url(img/pintura_porcelana.jpg);
         background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
+        background-position: center;
+        background-size:cover;
         opacity: 0.7;
-        transition: opacity 1s, transform 1s;
-        box-shadow: 4px 4px 4px 4px grey;       
+        transition: opacity 0.5s, transform 1s;
+        box-shadow: 4px 4px 4px 4px grey;
     }
-    
-    #img1:hover{
+
+    #img1:hover {
         cursor: default;
         opacity: 1;
         transform: scale(1.05);
     }
-    
-    #img1 a{
+
+    #img1 a {
         position: relative;
         left: 85%;
         top: 85%;
@@ -533,8 +582,9 @@ footer {
         opacity: 0;
         border-radius: 15px;
     }
-    
-    #img1 a::after, #img3 a::after{
+
+    #img1 a::after,
+    #img3 a::after {
         content: "";
         position: absolute;
         bottom: 100%;
@@ -544,38 +594,41 @@ footer {
         border-style: solid;
         border-color: transparent transparent white transparent;
     }
-    
-    #img1:hover a{
+
+    #img1:hover a {
         opacity: 1;
     }
-    
-    .barra{
-        margin-top: 10%;
-        display: block;
+
+    .barra {
+        display: flex;
+        justify-content: space-around;
         position: relative;
         width: 100%;
         height: 60%;
-}
-    
-    .barra .up, .barra .down{
+        text-align: center;
+    }
+
+    .barra .up,
+    .barra .down {
         position: relative;
-        width: 20%;
-        margin: 0 2.5%;
-        height: 80%;
+        width: 230px;
+        height: 650px;
         float: left;
         box-shadow: 4px 4px 4px 4px grey;
         opacity: 0.7;
         transition: opacity 1s, transform 1s;
     }
-    
-    .up:hover, .down:hover{
+
+    .up:hover,
+    .down:hover {
         cursor: default;
         opacity: 1;
         transform: scale(1.05);
     }
-    
-    .barra .up a, .barra .down a{ 
-        position:absolute;
+
+    .barra .up a,
+    .barra .down a {
+        position: absolute;
         color: black;
         background-color: white;
         text-align: center;
@@ -585,26 +638,27 @@ footer {
         opacity: 0;
         border-radius: 25px;
     }
-   
-    .barra .up:hover a, .barra .down:hover a{
+
+    .barra .up:hover a,
+    .barra .down:hover a {
         opacity: 1;
     }
-    
-    #img2{
+
+    #img2 {
         background-image: url(img/pintura_bastidor.jpg);
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
-        top: -90px;
+        top: -5%;
     }
-    
-    #img2 a{
+
+    #img2 a {
         width: 350px;
         top: 1%;
-        left: 70%;    
+        left: 70%;
     }
-    
-    #img2 a::after{
+
+    #img2 a::after {
         content: "";
         position: absolute;
         top: 100%;
@@ -614,36 +668,37 @@ footer {
         border-style: solid;
         border-color: white transparent transparent transparent;
     }
-    
-    #img3{
+
+    #img3 {
         background-image: url(img/acuarela.jpg);
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
-        top: 70px;
+        top: 15%;
     }
-    
-    #img3 a{
+
+    #img3 a {
         width: 200px;
         bottom: -5%;
         left: 60%;
     }
-    
-    #img4{
+
+    #img4 {
         background-image: url(img/mix_media.jpg);
-        background-repeat:no-repeat;
+        background-repeat: no-repeat;
         background-position: center;
-        background-size:cover;
-        top: -100px;
+        background-size: cover;
+        top: 0;
     }
-    
-    #img4 a{
+
+    #img4 a {
         width: 200px;
         bottom: 40%;
         left: 10%;
     }
-    
-#img4 a::after, #img5 a::after{
+
+    #img4 a::after,
+    #img5 a::after {
         content: "";
         position: absolute;
         bottom: 100%;
@@ -653,32 +708,42 @@ footer {
         border-style: solid;
         border-color: transparent transparent white transparent;
     }
-    #img5{
+
+    #img5 {
         background-image: url(img/repujado_estanyo.jpg);
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
+        top: 10%
     }
-    
-    #img5 a{
+
+    #img5 a {
         width: 330px;
         bottom: -5%;
         left: -60%;
     }
-    
-    #img1 a:hover, #img2 a:hover, #img3 a:hover, #img4 a:hover, #img5 a:hover{
+
+    #img1 a:hover,
+    #img2 a:hover,
+    #img3 a:hover,
+    #img4 a:hover,
+    #img5 a:hover {
         cursor: pointer;
-        background-color: rgba(196, 12, 19, 0.8);
-        color: blanchedalmond;
-        text-shadow: 1px 1px 5px snow;
+        color: #9c0900;
+        font-weight: 400;
+        text-shadow: -1px 1px 5px #556fb5;
         text-decoration: none;
     }
-    
-    #img1 a:active, #img2 a:active, #img3 a:active, #img4 a:active, #img5 a:active{
+
+    #img1 a:active,
+    #img2 a:active,
+    #img3 a:active,
+    #img4 a:active,
+    #img5 a:active {
         cursor: pointer;
-        background-color: rgba(0, 12, 19, 0.8);
-        color: white;
-        font-size: 1.1em;
+        text-shadow: 0 0 5px rgba(0, 12, 19, 0.8);
+        color: #2a0048;
+        font-size: 0.95em;
     }
-    
+
 }
