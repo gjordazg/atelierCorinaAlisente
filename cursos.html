@@ -7,7 +7,7 @@
     <meta name="author" content="GJOG">
     <meta name="description" content="Index de Prueba">
     <meta name="keywords" content="Atelier Corina Alisente">
-    <title>Contáctanos</title>
+    <title>Cursos</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="estiloContacto.css">
     <script src="https://kit.fontawesome.com/0f157db75e.js" crossorigin="anonymous"></script>
@@ -17,7 +17,7 @@
 
 <body>
     <!-- En esta seccion se incluyen elementos como el logo de la empresa, menu principal y redes sociales de la empresa, asi como un banner de bienvenida -->
-    <header class="contenedor_header" style="background-image: url(img/contacto.jpg)">
+    <header class="contenedor_header" style="background-image: url(img/contacto/cursos04.jpg)">
         <!-- Barra de menu -->
         <div class="barra_menu">
             <!-- Contenedor del logo -->
@@ -32,9 +32,9 @@
                 <div class="contenedor_menu" id="boxMenu">
                     <ul class="menu">
                         <li class="seleccionable"><a href="index.html" target="_self">Inicio</a></li>
-                        <li class="seleccionable"><a href="cursos.html" target="_blank">Cursos</a></li>
+                        <li class="active"><a href="cursos.html" target="_blank">Cursos</a></li>
                         <li class="seleccionable"><a href="galeria.html" target="_blank">Galeria</a></li>
-                        <li class="active"><a href="contacto.html" target="_blank">Contacto</a></li>
+                        <li class="seleccionable"><a href="contacto.html" target="_blank">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -47,42 +47,33 @@
         </div>
         <!-- Banner de bienvenida -->
         <div class="banner">
-            <p>Contáctanos</p>
+            <p>Cursos</p>
         </div>
-        <a class="boton-whsp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
     </header>
 
-    <!-- En esta seccion se incluye la ubicación en un mapa de google y un formulario de contacto -->
+    <!-- En esta seccion se incluye una galeria de elementos que direcciona al usuario a diferentes paginas del proyecto-->
     <main>
-        <div class="contacto">
-            <div class="col-100-50 map">
-                <p>Dónde encontrarnos:</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6570.343726146143!2d-58.49394030077152!3d-34.574517652956736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb65c46befd53%3A0x7c2ce043c5a99a5b!2sFranklin%20D.%20Roosevelt%205320%2C%20C1431%20BZL%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1588940563142!5m2!1ses-419!2sar" class="mapa" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
-            <div class="col-100-50">
-                <p>Envíanos tu mensaje</p>
-                <form action="enviar.php" method="post" class="formulario">
-                    <fieldset class="form-group">
-                        <legend for="formGroupExampleInput">Nombre:</legend>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su Nombre" name="nombre" required="required">
-                    </fieldset>
-                    <fieldset class="form-group">
-                        <legend for="formGroupExampleInput2">Mail:</legend>
-                        <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese el mail" name="mail" required="required">
-                    </fieldset>
-                    <fieldset class="form-group">
-                        <legend for="formGroupExampleInput2">Teléfono:</legend>
-                        <input type="phone" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese el telefono" name="telefono" required="required">
-                    </fieldset>
-                    <fieldset class="form-group">
-                        <legend for="exampleFormControlTextarea1">Mensaje:</legend>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba su mensaje" name="mensaje" required="required"></textarea>
-                    </fieldset>
-                    <div class="enviar"><input type="submit" class="btn" value="Enviar"></div>
-                </form>
-            </div>
+        <div class="anuncio">
+            <p>Disculpe. Estamos trabajando para habilitar esta sección y que pronto pueda disfrutar de nuestros cursos online.</p>
+            <img class="img-cursos" src="img/contacto/trabajando.jpg">
+        </div>
+        <div class="login">
+            <form action="" method="post">
+                <div class="imagen">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-cont">
+                    <label>Usuario:</label>
+                    <input type="text" placeholder="Ingrese usuario o correo" />
+                </div>
+                <div class="form-cont">
+                    <label>Clave:</label>
+                    <input type="password" placeholder="Ingrese su clave" />
+                </div>
+                <div class="enviar">
+                    <input type="submit" value="Ingresar" class="btn">
+                </div>
+            </form>
         </div>
     </main>
 
@@ -102,4 +93,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/funcionalidad.js"></script>
-</body></html>
+</body>
+
+</html>

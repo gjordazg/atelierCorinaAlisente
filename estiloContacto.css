@@ -1,0 +1,190 @@
+/* ------------------- Estilo de la vista mobile -------------------------- */
+/* ------------------------------------------------------------------------ */
+
+.boton-whsp {
+    position: fixed;
+    z-index: 2000;
+    top: 400px;
+    right: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: forestgreen;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -4px 4px 20px grey;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2.2em;
+    padding: 1%;
+}
+.boton-whsp i{
+    color: white
+}
+
+main {
+    height: 1024px;
+}
+
+main p {
+    color: azure;
+    font-size: 1.0em;
+    padding: 5px 15px 7px;
+    text-shadow: -2px 2px 2px black, 0 0 5px red;
+}
+
+.col-100-50 {
+    width: 100%;
+    height: auto;
+}
+
+.mapa {
+    width: 80%;
+    height: 350px;
+    margin: 2% 10%;
+    box-shadow: -3px 3px 8px 5px grey;
+}
+
+.formulario {
+    width: 80%;
+    margin: 2% 10%;
+}
+
+.formulario legend {
+    color: azure;
+    font-size: 1.0em;
+    line-height: 15px;
+}
+
+.formulario .form-control{
+    font-size: 0.7em;
+}
+
+.enviar {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.enviar .btn {
+    background-color: green;
+    color: aliceblue;
+    font-size: 0.7em;
+    height: 40px;
+    width: 70px;
+    border-radius: 10px;
+    box-shadow: -2px 2px 3px gray;
+    padding: 0;
+}
+
+.enviar .btn:hover {
+    background-color: red;
+    color: aliceblue;
+    box-shadow: -2px 2px 3px white;
+}
+
+.enviar .btn:active {
+    transform: scale(0.9);
+}
+
+
+/* ------------------- Estilo de la vista tablet -------------------------- */
+/* ------------------------------------------------------------------------ */
+
+
+@media screen and (min-width: 650px) {
+
+    .boton-whsp {
+        top: 500px;
+        width: 60px;
+        height: 60px;
+        font-size: 2.3em;
+    }
+
+    main {
+        height: 1600px;
+    }
+
+    main p {
+        font-size: 1.3em;
+    }
+
+    .mapa {
+        height: 450px;
+    }
+
+    .formulario legend {
+        font-size: 1.2em;
+        line-height: 40px;
+    }
+    
+.formulario .form-control{
+    font-size: 0.9em;
+}
+    .enviar .btn {
+        font-size: 0.8em;
+        height: 60px;
+        width: 120px;
+        border-radius: 10px;
+        box-shadow: -2px 2px 3px gray;
+    }
+
+}
+
+/* --------------------- Estilo de la vista PC ---------------------------- */
+/* ------------------------------------------------------------------------ */
+
+
+@media screen and (min-width: 1024px) {
+
+    .boton-whsp {
+        top: 680px;
+        width: 70px;
+        height: 70px;
+        font-size: 2.8em;
+    }
+
+    main {
+        height: 950px;
+        padding: 3% 0;
+    }
+
+    .contacto {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    main p {
+        font-size: 1.5em;
+    }
+
+    .col-100-50 {
+        display: block;
+        position: relative;
+        width: 50%;
+        height: auto;
+    }
+
+    main .map {
+        border-right: 2px dashed white;
+    }
+    
+.mapa {
+        height: 650px;
+    }
+    .formulario legend {
+        font-size: 1.3em;
+        line-height: 50px;
+    }
+
+    .enviar .btn {
+        font-size: 1.1em;
+        height: 65px;
+        width: 150px;
+    }
+}

@@ -173,7 +173,7 @@ li a:link {
     text-shadow: -1px 2px 3px black;
 }
 
-li a:visited{
+li a:visited {
     text-decoration: none;
     color: seashell;
 }
@@ -232,6 +232,7 @@ li a:visited{
     font-size: 3em;
     color: cornsilk;
     text-shadow: 2px 3px 4px red, 0 0 10px black;
+    text-align: center;
 }
 
 
@@ -242,12 +243,21 @@ li a:visited{
 main {
     display: block;
     position: relative;
-    height: 480px;
+    height: 520px;
     font-family: 'Lato', sans-serif;
     font-size: 2em;
     text-decoration: none;
     background-color: rgba(18, 35, 77, 0.8);
 }
+
+main h2 {
+    display: block;
+    position: relative;
+    padding: 5px 10px;
+    font-size: 1em;
+    color: azure;
+}
+
 
 .galeria1 {
     display: none;
@@ -257,10 +267,9 @@ main {
     display: block;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 90%;
     text-align: center;
 }
-
 
 .navigator,
 .item {
@@ -307,6 +316,36 @@ main {
     text-decoration: none;
 }
 
+.anuncio{
+    padding: 5%;
+    color:antiquewhite;
+    text-align: center;
+}
+.anuncio img{
+    width: 100%;
+}
+
+.login{
+    text-align: center;
+    color: aliceblue;
+    font-size: 0.8em;
+}
+
+.login i{
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 2em; 
+}
+
+.img-cursos{
+    display: block;
+    position: absolute;
+    opacity: 0.4;
+    left: 0;
+    top: 10%;
+    z-index: 10;
+}
 
 
 /* ---------------------------------- */
@@ -402,12 +441,18 @@ footer {
     /* ---------------------------------- */
 
     main {
-        height: 650px;
+        height: 750px;
         font-size: 3em;
     }
 
+    main h2 {
+        padding: 10px 25px;
+        font-size: 1.2em;
+    }
+
     .galeria2 {
-        padding: 5% 15%;
+        height: 85%;
+        padding: 0 15%;
     }
 
     .item img {
@@ -459,11 +504,11 @@ footer {
 
     /* Logo */
 
-    .col-33-40{
-         display: flex;
+    .col-33-40 {
+        display: flex;
         justify-content: space-around;
     }
-    
+
     img.logo {
         margin: auto;
         height: 80%;
@@ -534,8 +579,15 @@ footer {
     /* ---------------------------------- */
 
     main {
-        height: 1250px;
+        height: 1400px;
         font-size: 2.5em;
+    }
+
+
+    main h2 {
+        padding: 20px 30px;
+        font-size: 1.8em;
+        color: azure;
     }
 
     .galeria2 {
@@ -545,7 +597,7 @@ footer {
     .galeria1 {
         display: block;
         position: relative;
-        height: 100%;
+        height: 95%;
         width: 100%;
     }
 
@@ -558,14 +610,14 @@ footer {
 
     #img1 {
         position: relative;
-        left: 15%; 
+        left: 15%;
         top: 10%;
         width: 650px;
         height: 230px;
         background-image: url(img/pintura_porcelana.jpg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size:cover;
+        background-size: cover;
         opacity: 0.9;
         transition: opacity 0.5s, transform 1s;
         box-shadow: 4px 4px 4px 4px grey;

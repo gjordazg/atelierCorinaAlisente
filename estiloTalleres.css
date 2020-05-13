@@ -1,0 +1,133 @@
+/* ------------------- Estilo de la vista mobile -------------------------- */
+/* ------------------------------------------------------------------------ */
+
+main {
+    height: auto;
+    padding: 2.5%;
+}
+
+.taller {
+    width: 100%;
+    position: relative;
+    display: block;
+    height: auto;
+}
+
+.fotos {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fotos img {
+    width: 20%;
+    height: auto;
+    position: relative;
+    margin: 10px;
+    box-shadow: -2px 2px 3px white;
+    border-radius: 10px;
+}
+
+.fotos .ancho{
+    width: 30%;
+}
+
+.leyenda {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+}
+
+.col-100-50 {
+    width: 100%;
+    position: relative;
+    color: azure;
+    font-size: 0.8em;
+    padding: 0 15px;
+    padding-top: 5px;
+    text-shadow: -2px 2px 2px black, 0 0 5px red, -5px 5px 20px white;
+    text-indent: 15px;
+    text-align: justify;
+}
+
+footer {
+    height: auto;
+}
+
+.footer p {
+    height: auto;
+}
+
+
+/* ------------------- Estilo de la vista tablet -------------------------- */
+/* ------------------------------------------------------------------------ */
+
+
+@media screen and (min-width: 650px) {
+
+    .taller {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .fotos,
+    .leyenda {
+        width: 50%;
+    }
+
+
+    .fotos img {
+        width: 40%;
+        height: auto;
+    }
+    
+    .fotos .ancho{
+        width: 60%;
+        height: auto;
+    }
+
+    .leyenda p {
+        font-size: 0.7em;
+        line-height: 40px;
+    }
+}
+
+
+/* --------------------- Estilo de la vista PC ---------------------------- */
+/* ------------------------------------------------------------------------ */
+
+
+@media screen and (min-width: 1024px) {
+
+    .fotos,
+    .leyenda {
+        width: 100%;
+    }
+
+
+    .fotos img {
+        width: 20%;
+        height: auto;
+    }
+    
+    .fotos .ancho{
+        width: 25%;
+        height: auto;
+    }
+
+    .col-100-50 {
+        width: 50%;
+        margin: auto;
+    }
+
+    .leyenda p {
+        font-size: 1.0em;
+        line-height: normal;
+    }
+}

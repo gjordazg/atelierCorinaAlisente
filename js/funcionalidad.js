@@ -1,3 +1,4 @@
+//Funcion Slice de la barra de menu
 const btnMenu = document.getElementById("btn_menu");
 btnMenu.addEventListener("click", mostrarMenu);
 let vista = false;
@@ -14,3 +15,21 @@ function mostrarMenu(){
         vista = false;
     }
 }
+
+//Funcion modal para la galeria de imagenes
+let imagenes = document.querySelectorAll('.img-galeria');
+let modal = document.querySelector('#modal');
+let img = document.querySelector('#img-modal');
+let boton = document.querySelector('#modal-btn');
+
+for(let i = 0; i < imagenes.length; i++){
+imagenes[i].addEventListener('click', function(e){
+modal.classList.toggle("modal-open");
+let src = e.target.src;
+img.setAttribute("src", src);
+});
+}
+
+boton.addEventListener('click', function(){
+modal.classList.toggle("modal-open"); // La palabra clave toggle funciona como un interruptors
+});
